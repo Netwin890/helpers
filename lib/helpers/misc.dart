@@ -128,8 +128,6 @@ class Misc {
     final RenderView renderView = RenderView(
       child: RenderPositionedBox(child: repaintBoundary),
       configuration: ViewConfiguration(
-        physicalConstraints: BoxConstraints(
-            maxHeight: logicalSize.height, maxWidth: logicalSize.width),
         logicalConstraints: BoxConstraints(
             maxHeight: logicalSize.height, maxWidth: logicalSize.width),
         devicePixelRatio: pixelRatio ?? 1.0,
