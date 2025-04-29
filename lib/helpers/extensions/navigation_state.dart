@@ -39,7 +39,6 @@ extension NavigatorStateHelperExtension on NavigatorState {
   ///```dart
   /// NoTransitionPageRoute<T>(child: page)
   /// ```
-  @optionalTypeArgs
   Future<T?> pushNoTransition<T extends Object?>(Widget page) {
     return push<T>(NoTransitionPageRoute<T>(child: page));
   }
@@ -52,7 +51,6 @@ extension NavigatorStateHelperExtension on NavigatorState {
   ///  NoTransitionPageRoute<T>(child: page),
   ///);
   /// ```
-  @optionalTypeArgs
   Future<T?> pushReplacementNoTransition<T extends Object?, TO extends Object?>(
     Widget page,
   ) {
